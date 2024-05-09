@@ -24,7 +24,7 @@ p {
 header {
   margin: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(img/bg.jpg);
+    url(../img/bg.jpg);
   background-position: center;
   background-size: cover;
   height: 650px;
