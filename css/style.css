@@ -380,6 +380,16 @@ footer {
         border-right: none;
         text-align: center;
       }
-     }  
+     }
+  }
+  header{
+    .title{
+      width: 50%;
+      font-size: 3rem;
+      transform: translate(-18%, 60%);
+      span{
+        font-size: 3.6rem;
+      }
+    }
   }
 }
