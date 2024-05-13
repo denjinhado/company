@@ -324,7 +324,20 @@ footer {
     color: #dde6ed;
   }
 }
-
+.navbar-foot {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  .link {
+    /* margin-right: 5rem; */
+    padding-right: 3rem;
+    text-decoration: none;
+    color: #eff8ff;
+    border-right: 2px solid #eff8ff;
+    transition: all 0.4s;
+  }
+}
 .typing-text {
   overflow: hidden;
   white-space: nowrap;
@@ -391,5 +404,29 @@ footer {
         font-size: 3.6rem;
       }
     }
+  }
+  .content-container{
+    display: flex;
+    flex-direction: column;
+    .content-title{
+      text-align: center;
+      border-right: none;
+      margin: 0;
+    }
+  }
+  .cards{
+    display: flex;
+    flex-direction: column-reverse;
+    .twobytwo{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      width: 70rem;
+    }
+  }
+  .navbar-foot{
+    display: none;
   }
 }
