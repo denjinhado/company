@@ -424,6 +424,30 @@ footer {
       align-items: center;
       width: 100%;
     }
+    .box{
+      width: 40rem;
+    }
+    .box:first-child {
+      border-top: 2px solid black;
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+      border-bottom: none;
+    }
+    .box:nth-child(2) {
+      border-bottom: none;
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+    }
+    .box:nth-child(3) {
+      border-top: 2px solid black;
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+    }
+    .box:nth-child(4) {
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+      border-bottom: 2px solid black;
+    }
   }
   .blog{
     display: flex;
