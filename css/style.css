@@ -423,8 +423,14 @@ footer {
       justify-content: center;
       align-items: center;
       width: 100%;
-      width: 70rem;
     }
+  }
+  .blog{
+    display: flex;
+    flex-direction: column;
+  }
+  .article{
+    height: 60rem;
   }
   .navbar-foot{
     display: none;
