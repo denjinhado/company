@@ -57,6 +57,9 @@ header {
     width: 4rem;
     filter: invert(100%);
   }
+  .mobile-menu{
+    display: none;
+  }
   .navbar {
     display: flex;
     gap: 3rem;
@@ -348,5 +351,35 @@ footer {
   }
   100% {
     opacity: 1;
+  }
+}
+/* tablet */
+@media (min-height:768px){
+}
+/* tablet */
+@media screen and (min-width: 370px) and (max-width:768px){
+  .nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    .mobile-menu{
+      display: contents;
+      img{
+        width: 3rem;
+      }
+    }
+    .navbar{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .link{
+        padding: 0;
+        border-right: none;
+        text-align: center;
+      }
+     }  
   }
 }
