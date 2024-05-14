@@ -399,7 +399,8 @@ footer {
     .title{
       width: 50%;
       font-size: 3rem;
-      transform: translate(-18%, 60%);
+      position: relative;
+      transform: translate(-18%, -60%);
       span{
         font-size: 3.6rem;
       }
@@ -412,6 +413,8 @@ footer {
       text-align: center;
       border-right: none;
       margin: 0;
+      width: 100%;
+      padding-right: 0;
     }
   }
   .cards{
@@ -425,7 +428,7 @@ footer {
       width: 100%;
     }
     .box{
-      width: 40rem;
+      width: 30rem;
     }
     .box:first-child {
       border-top: 2px solid black;
@@ -448,13 +451,17 @@ footer {
       border-right: 2px solid black;
       border-bottom: 2px solid black;
     }
+    .two-text{
+      border-left: none;
+      margin-left: 0;    
+    }
   }
   .blog{
     display: flex;
     flex-direction: column;
   }
   .article{
-    height: 60rem;
+    height: 65rem;
   }
   .navbar-foot{
     display: none;
