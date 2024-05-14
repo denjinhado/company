@@ -370,7 +370,7 @@ footer {
 @media (min-height:768px){
 }
 /* tablet */
-@media screen and (min-width: 370px) and (max-width:768px){
+@media screen and (min-width: 360px) and (max-width:768px){
   .nav{
     display: flex;
     flex-direction: column;
