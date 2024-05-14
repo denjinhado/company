@@ -397,10 +397,10 @@ footer {
   }
   header{
     .title{
-      width: 50%;
-      font-size: 3rem;
+      width: 38%;
+      font-size: 2rem;
       position: relative;
-      transform: translate(-18%, -60%);
+      transform: translate(-25%, -60%);
       span{
         font-size: 3.6rem;
       }
