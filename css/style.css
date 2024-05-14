@@ -396,11 +396,11 @@ footer {
         border-right: none;
         text-align: center;
       }
-      .mostrar {
-        visibility: visible;
-        opacity: 1;
-      }
      }
+     .mostrar {
+      visibility: visible;
+      opacity: 1;
+    }
   }
   header{
     .title{
