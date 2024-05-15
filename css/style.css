@@ -57,7 +57,7 @@ header {
     width: 4rem;
     filter: invert(100%);
   }
-  .mobile-menu{
+  .mobile-menu {
     display: none;
   }
   .navbar {
@@ -173,62 +173,61 @@ hr {
   place-items: center;
 }
 /* cards */
-.cards{
+.cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   width: 80%;
-  h2{
-    border-left: 2px ;
+  h2 {
+    border-left: 2px;
   }
 }
-.twobytwo{
+.twobytwo {
   margin-top: 3rem;
 }
-.box{
+.box {
   box-sizing: border-box;
   float: left;
   width: 50%;
   height: 50%;
-  background-color: #eef0f5;;
+  background-color: #eef0f5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  p{
+  p {
     margin: 0;
     text-transform: uppercase;
     font-size: 4rem;
     font-weight: 700;
   }
-  img{
+  img {
     margin: 0;
     width: 5rem;
   }
-  .light{
+  .light {
     width: 4rem;
   }
 }
-.box:hover{
+.box:hover {
   background-color: #4a6488;
   transition: 0.2s;
-  
 }
 .box:hover p {
-display: none;
+  display: none;
 }
 .box:hover img {
   display: none;
-  }
-.box:hover:after{
+}
+.box:hover:after {
   filter: invert(100%);
-  content:"Lorem ipsum dolor sit amet consectetur adipisicing elit...";
+  content: "Lorem ipsum dolor sit amet consectetur adipisicing elit...";
   font-size: 2.5rem;
   text-align: center;
 }
-.twobytwo{
+.twobytwo {
   width: 100rem;
   height: 50rem;
 }
@@ -249,15 +248,15 @@ display: none;
   border-right: 2px solid black;
   border-bottom: 2px solid black;
 }
-.two-text{
+.two-text {
   border-left: solid 2px;
   margin-left: 4rem;
-  span{
+  span {
     text-decoration: underline;
     text-decoration-thickness: 2px;
   }
 }
-.learn{
+.learn {
   width: 60%;
   margin: 0 auto;
 }
@@ -367,56 +366,58 @@ footer {
   }
 }
 /* tablet */
-@media (min-height:768px){
+@media (min-height: 768px) {
 }
 /* tablet */
-@media screen and (min-width: 360px) and (max-width:768px){
-  .nav{
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    .mobile-menu{
+    .mobile-menu {
       display: contents;
-      img{
+      img {
         width: 3rem;
       }
     }
-    .navbar{
+    .navbar {
       margin-top: 1rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      transition: visibility 0.3s, ease-in-out, opacity 0.5s linear;
+      /* transition: visibility 0.3s, ease-in-out, opacity 0.5s linear; */
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
       visibility: hidden;
-      .link{
+      .link {
         padding: 0;
         border-right: none;
         text-align: center;
       }
-     }
-     .mostrar {
+    }
+    .mostrar {
       visibility: visible;
       opacity: 1;
     }
   }
-  header{
-    .title{
+  header {
+    .title {
       width: 39%;
       font-size: 2rem;
       position: relative;
       transform: translate(-25%, -60%);
-      span{
+      span {
         font-size: 3.5rem;
       }
     }
   }
-  .content-container{
+  .content-container {
     display: flex;
     flex-direction: column;
-    .content-title{
+    .content-title {
       text-align: center;
       border-right: none;
       margin: 0;
@@ -424,17 +425,17 @@ footer {
       padding-right: 0;
     }
   }
-  .cards{
+  .cards {
     display: flex;
     flex-direction: column-reverse;
-    .twobytwo{
+    .twobytwo {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 100%;
     }
-    .box{
+    .box {
       width: 30rem;
     }
     .box:first-child {
@@ -458,19 +459,19 @@ footer {
       border-right: 2px solid black;
       border-bottom: 2px solid black;
     }
-    .two-text{
+    .two-text {
       border-left: none;
-      margin-left: 0;    
+      margin-left: 0;
     }
   }
-  .blog{
+  .blog {
     display: flex;
     flex-direction: column;
   }
-  .article{
+  .article {
     height: 65rem;
   }
-  .navbar-foot{
+  .navbar-foot {
     display: none;
   }
 }
