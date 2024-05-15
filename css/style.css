@@ -371,7 +371,7 @@ footer {
 /* tablet */
 @media screen and (min-width: 360px) and (max-width: 768px) {
   .footer-nav {
-    /* visibility: hidden; */
+    visibility: hidden;
   }
   .nav {
     display: flex;
