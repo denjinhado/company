@@ -366,9 +366,95 @@ footer {
   }
 }
 /* tablet */
-@media (min-height: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1340px)  {
+  .footer-nav {
+    visibility: hidden;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 30px;
+    .logo {
+      margin-top: 3.5rem;
+    }
+    .mobile-menu {
+      display: contents;
+      img {
+        margin-top: 3.5rem;
+        width: 40px;
+        height: 45px;
+      }
+    }
+    .navbar {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* transition: visibility 0.3s, ease-in-out, opacity 0.5s linear; */
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      visibility: hidden;
+      .link {
+        padding: 0;
+        border-right: none;
+        text-align: center;
+      }
+    }
+    .mostrar {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  header {
+    height: 500px;
+    .title {
+      width: 39%;
+      font-size: 5rem;
+      top: 25%;
+      left: 15%;
+      position: relative;
+      transform: translate(-25%, -60%);
+      span {
+        font-size: 6.3rem;
+      }
+    }
+  }
+  .content-container {
+    width: 70%;
+    .content-title {
+      /* font-size: 5rem; */
+      text-align: center;
+      span {
+        font-size: 5rem;
+      }
+    }
+  }
+  .cards {
+    display: flex;
+    flex-direction: column-reverse;
+    .twobytwo{
+      width: 100%;
+    }
+    .two-text {
+      border-left: none;
+      margin-left: 0;
+    }
+  }
+  .blog {
+    display: flex;
+    flex-direction: column;
+  }
+  .article {
+    height: 65rem;
+  }
+  .navbar-foot {
+    display: none;
+  }
 }
-/* tablet */
+/* phone */
 @media screen and (min-width: 360px) and (max-width: 768px) {
   .footer-nav {
     visibility: hidden;
