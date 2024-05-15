@@ -113,7 +113,7 @@ header {
   gap: 2rem;
   margin-bottom: 3rem;
   .content-title {
-    font-size: 6rem;
+    font-size: 5rem;
     width: 100%;
     text-align: center;
     padding-right: 10px;
@@ -370,6 +370,9 @@ footer {
 }
 /* tablet */
 @media screen and (min-width: 360px) and (max-width: 768px) {
+  .footer-nav {
+    /* visibility: hidden; */
+  }
   .nav {
     display: flex;
     flex-direction: row;
@@ -409,9 +412,12 @@ footer {
     }
   }
   header {
+    height: 500px;
     .title {
       width: 39%;
-      font-size: 2rem;
+      font-size: 3rem;
+      top: 25%;
+      left: 15%;
       position: relative;
       transform: translate(-25%, -60%);
       span {
@@ -423,11 +429,15 @@ footer {
     display: flex;
     flex-direction: column;
     .content-title {
+      /* font-size: 5rem; */
       text-align: center;
       border-right: none;
       margin: 0;
       width: 100%;
       padding-right: 0;
+      span {
+        font-size: 5rem;
+      }
     }
   }
   .cards {
